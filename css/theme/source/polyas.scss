@@ -1,0 +1,76 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+
+/** Montserrat Medium **/
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  src: url('assets/fonts/Montserrat/Montserrat-Medium.eot');
+  src: url('assets/fonts/Montserrat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/Montserrat/Montserrat-Medium.woff2') format('woff2'),
+  url('assets/fonts/Montserrat/Montserrat-Medium.woff') format('woff');
+}
+
+/** Montserrat SemiBold **/
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  src: url('assets/fonts/Montserrat/Montserrat-SemiBold.eot');
+  src: url('assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/Montserrat/Montserrat-SemiBold.woff2') format('woff2'),
+  url('assets/fonts/Montserrat/Montserrat-SemiBold.woff') format('woff');
+}
+
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Montserrat', sans-serif;
+$mainColor: #4f4f4f;
+$headingFont: 'Montserrat', sans-serif;
+$headingColor: #000;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #fff;
+$linkColor: #00008B;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal {
+  blockquote {
+    font-size: 30px;
+    text-align: left;
+    box-shadow: 3px 0px 8px rgb(0 0 0 / 30%);
+
+    p {
+      padding: 2rem;
+    }
+
+    footer {
+      font-size: 20px !important;
+      padding: 1rem;
+    }
+  }
+}
