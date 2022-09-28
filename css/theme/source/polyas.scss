@@ -20,10 +20,10 @@
   font-family: 'Montserrat';
   font-weight: 500;
   font-style: normal;
-  src: url('assets/fonts/Montserrat/Montserrat-Medium.eot');
-  src: url('assets/fonts/Montserrat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
-  url('assets/fonts/Montserrat/Montserrat-Medium.woff2') format('woff2'),
-  url('assets/fonts/Montserrat/Montserrat-Medium.woff') format('woff');
+  src: url('/assets/fonts/Montserrat/Montserrat-Medium.eot');
+  src: url('/assets/fonts/Montserrat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Montserrat/Montserrat-Medium.woff2') format('woff2'),
+  url('/assets/fonts/Montserrat/Montserrat-Medium.woff') format('woff');
 }
 
 /** Montserrat SemiBold **/
@@ -31,10 +31,10 @@
   font-family: 'Montserrat';
   font-weight: 600;
   font-style: normal;
-  src: url('assets/fonts/Montserrat/Montserrat-SemiBold.eot');
-  src: url('assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
-  url('assets/fonts/Montserrat/Montserrat-SemiBold.woff2') format('woff2'),
-  url('assets/fonts/Montserrat/Montserrat-SemiBold.woff') format('woff');
+  src: url('/assets/fonts/Montserrat/Montserrat-SemiBold.eot');
+  src: url('/assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Montserrat/Montserrat-SemiBold.woff2') format('woff2'),
+  url('/assets/fonts/Montserrat/Montserrat-SemiBold.woff') format('woff');
 }
 
 
@@ -43,7 +43,8 @@
 $mainFont: 'Montserrat', sans-serif;
 $mainColor: #4f4f4f;
 $headingFont: 'Montserrat', sans-serif;
-$headingColor: #000;
+$mainFontSize: 30px;
+$headingColor: #4f4f4f;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: #fff;
@@ -63,6 +64,7 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
     font-size: 30px;
     text-align: left;
     box-shadow: 3px 0px 8px rgb(0 0 0 / 30%);
+    font-style: normal;
 
     p {
       padding: 2rem;
@@ -72,5 +74,56 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
       font-size: 20px !important;
       padding: 1rem;
     }
+  }
+
+  h3,h4, table, ul, ol{
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  li>ul{
+    margin-top: 0;
+  }
+
+  code {
+    display: inline-block;
+    background-color: grey;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .fragment.highlight-green.visible {
+    color: #12d125 !important;
+  }
+
+  .pageFooter,.pageHeader {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height:auto;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+    background-color: #738f9b;
+    color: #fff;
+    img, p{
+      margin: 0;
+    }
+    .pageFooter__right,
+    .pageFooter__left,
+    .pageHeader__left,
+    .pageHeader__right{
+      padding: 1.5rem;
+    }
+  }
+  .pageHeader{
+    font-size: 24px;
+    top:0;
+    height:80px;
+  }
+  .controls{
+    color: white;
   }
 }

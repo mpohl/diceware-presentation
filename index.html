@@ -26,20 +26,36 @@
 
   <body>
     <div class="reveal">
+      <header class="pageHeader">
+        <div class="pageHeader__left">
+          <p>Sichere Passwörter - einfach zu merken</p>
+        </div>
+        <div class="pageFooter__right"></div>
+      </header>
       <div class="slides">
-        <section>
+        <section data-transition="fade">
+          <h3>Sichere Passwörter - einfach zu merken</h3>
+          <h4>Ausbildungs Rahmenplan Nr.6 a)</h4>
+          <p>
+            <small
+              >Umsetzen, Integrieren und Prüfen von Maßnahmen zur IT-Sicherheit
+              und zum Datenschutz <br />Betriebliche Vorgaben und rechtliche
+              Regelungen einhalten</small
+            >
+          </p>
+        </section>
+        <section data-transition="fade">
           <blockquote class="blockquote">
             <p>
               Through 20 Years of effort,<br />
               we've successfully trained everyone <br />
               to use passwords that are <br />
               hard for humans to remember,<br />
-              but easy for computers to guess
+              but easy for computers to guess.
             </p>
             <footer>https://xkcd.com/936/</footer>
           </blockquote>
         </section>
-
         <section data-transition="fade-out">
           <blockquote class="blockquote">
             <p>
@@ -52,109 +68,184 @@
             <footer>https://xkcd.com/936/</footer>
           </blockquote>
         </section>
-
-        <section data-transition="fade-out">
-          <h2>data-background: lightblue</h2>
+        <section>
+          <h3>Kurzes, komplexes Passwort</h3>
+          <p><code>DCj9*qn8</code></p>
+          <small>
+            8 Zeichen, Groß- und Kleinbuchstaben, Zahlen, Sonderzeichen
+          </small>
+        </section>
+        <section>
+          <h3>Langes, einfaches Passwort</h3>
+          <p><code>glukose bild puffer sydney hallo</code></p>
+          <small>32 Zeichen, nur Kleinbuchstaben</small>
         </section>
 
         <section>
-          <section data-background="#ff0000">
-            <h2>data-background: #ff0000</h2>
-          </section>
-          <section data-background="rgba(0, 0, 0, 0.2)">
-            <h2>data-background: rgba(0, 0, 0, 0.2)</h2>
-          </section>
-          <section data-background="salmon">
-            <h2>data-background: salmon</h2>
-          </section>
-        </section>
-
-        <section data-background="rgba(0, 100, 100, 0.2)">
-          <section>
-            <h2>Background applied to stack</h2>
-          </section>
-          <section>
-            <h2>Background applied to stack</h2>
-          </section>
-          <section data-background="rgb(66, 66, 66)">
-            <h2>Background applied to slide inside of stack</h2>
-          </section>
-        </section>
-
-        <section
-          data-background-transition="slide"
-          data-background="assets/image1.png"
-        >
-          <h2>Background image</h2>
-        </section>
-
-        <section>
-          <section
-            data-background-transition="slide"
-            data-background="assets/image1.png"
+          <h3>Kurzes, komplexes Passwort</h3>
+          <p><code>DCj9*qn8</code></p>
+          <small
+            >8 Zeichen, Groß- und Kleinbuchstaben, Zahlen, Sonderzeichen</small
           >
-            <h2>Background image</h2>
-          </section>
-          <section
-            data-background-transition="slide"
-            data-background="assets/image1.png"
-          >
-            <h2>Background image</h2>
-          </section>
+          <table>
+            <tr>
+              <th>Möglichkeiten</th>
+              <td>576 480 100 000 000</td>
+            </tr>
+            <tr>
+              <th>Entropie</th>
+              <td>49 bits</td>
+            </tr>
+          </table>
         </section>
 
-        <section
-          data-background="assets/image2.png"
-          data-background-size="100px"
-          data-background-repeat="repeat"
-          data-background-color="#111"
-        >
-          <h2>Background image</h2>
-          <pre>
-data-background-size="100px" data-background-repeat="repeat" data-background-color="#111"</pre
-          >
-        </section>
-
-        <section data-background="#888888">
-          <h2>Same background twice (1/2)</h2>
-        </section>
-        <section data-background="#888888">
-          <h2>Same background twice (2/2)</h2>
-        </section>
-
-        <section
-          data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm"
-        >
-          <h2>Video background</h2>
-        </section>
-
-        <section
-          data-background-iframe="https://slides.com/news/make-better-presentations/embed?style=hidden&autoSlide=4000"
-        >
-          <h2>Iframe background</h2>
-        </section>
-
-        <section>
-          <section data-background="#417203">
-            <h2>Same background twice vertical (1/2)</h2>
-          </section>
-          <section data-background="#417203">
-            <h2>Same background twice vertical (2/2)</h2>
-          </section>
-        </section>
-
-        <section data-background="#934f4d">
-          <h2>Same background from horizontal to vertical (1/3)</h2>
+        <section data-transition="fade">
+          <h3>Was ist Entropie?</h3>
+          <p>
+            Vereinfacht umschrieben ordnet die Entropie jedem Zeichen eines
+            Passworts einen Informationsgehalt (Wert) in Abhängigkeit der
+            möglichen Zeichen zu.
+          </p>
+          <p>
+            Daraus ergibt sich ein Gesamtwert, welcher die „Stärke“ des
+            Passwortes umschreibt.
+          </p>
+          <p>
+            Dies bedeutet, dass ein Kennwort mit hoher Entropie potenziell aus
+            wesentlich mehr verschiedenen Zeichen bestehen könnte und so auch
+            schwieriger zu knacken ist.
+          </p>
         </section>
         <section>
-          <section data-background="#934f4d">
-            <h2>Same background from horizontal to vertical (2/3)</h2>
-          </section>
-          <section data-background="#934f4d">
-            <h2>Same background from horizontal to vertical (3/3)</h2>
-          </section>
+          <h3>Kurzes, komplexes Passwort</h3>
+          <p><code>DCj9*qn8</code></p>
+          <small
+            >8 Zeichen, Groß- und Kleinbuchstaben, Zahlen, Sonderzeichen</small
+          >
+          <table>
+            <tr>
+              <th>Möglichkeiten</th>
+              <td>576 480 100 000 000</td>
+            </tr>
+            <tr>
+              <th>Entropie</th>
+              <td>49 bits</td>
+            </tr>
+          </table>
+          <div class="fragment fade-in">
+            <h4>Bruteforce Hack</h4>
+            <p></p><small>Bruteforce = Beliebig schnelles Ausprobieren aller Möglichkeiten</small></p>
+            <table class="fragment fade-in">
+              <tr>
+                <th>Moderner PC</th>
+                <td>~ 95 Jahre</td>
+              </tr>
+              <tr class="fragment fade-in">
+                <th>Supercomputer, Botnet</th>
+                <td class="fragment highlight-red">~ 4 Stunden</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <section>
+          <h3>Langes, einfaches Passwort</h3>
+          <p><code>glukose bild puffer sydney hallo</code></p>
+          <small>32 Zeichen, nur Kleinbuchstaben</small>
+          <table>
+            <tr>
+              <th>Möglichkeiten</th>
+              <td>~ 1.90e+45</td>
+            </tr>
+            <tr>
+              <th>Entropie</th>
+              <td>~ 150.41 bits</td>
+            </tr>
+          </table>
+          <div class="fragment fade-in">
+            <h4>Bruteforce Hack</h4>
+            <table>
+              <tr>
+                <th>Moderner PC</th>
+                <td>~ 2.7e+31 Jahre</td>
+              </tr>
+              <tr class="fragment fade-in">
+                <th>Supercomputer, Botnet</th>
+                <td class="fragment highlight-green">~ 1.2e+26 Jahre</td>
+              </tr>
+            </table>
+            <table class="fragment fade-in">
+              <tr>
+                <th>Lebenserwartung der Sonne</th>
+                <td>~ 7e+9 Jahre</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <section data-background-color="rgb(0,0,0)"></section>
+        <section>
+          <h3>Weitere Vorteile</h3>
+          <ul>
+            <li class="fragment fade-in">
+              Leichter zu merken.
+              <ul>
+                <li>Reale Wörter</li>
+                <li>Eselsbrücken gut möglich</li>
+              </ul>
+              <div
+                class="fragment fade-in"
+                style="position: absolute; top: -130px; left: 17%"
+              >
+                <code>glukose bild puffer sydney hallo</code>
+              </div>
+            </li>
+            <li class="fragment fade-in">Leichter zu tippen.
+              <ul>
+                <li>Keine Sonderzeichen</li>
+                <li>Nur Kleinbuchstaben</li>
+                <li>Klare Schreibweise</li>
+              </ul>
+            </li>
+            <li class="fragment fade-in">
+              Schneller zu ändern (dazu später mehr)
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Wie erstelle ich ein solches Passwort?</h3>
+          <p class="fragment fade-in">Name der Methode: Diceware</p>
+          <p class="fragment fade-in">Man braucht eine Wortliste:<br>
+            <img src="/assets/words.gif" width="230" />
+          </p>
+          <p class="fragment fade-in">eine lange Wortliste ... <span  class="fragment fade-in"> 66666 Zeilen...</span></p>
+        </section>
+        <section>
+          <h3>Und Zufall!</h3>
+          <p class="fragment fade-in">Besser gesagt eine Zufallszahl zwischen 11111 und 66666</p>
+          <img src="assets/Dice.png" class="fragment fade-in" width="350">
+        </section>
+        <section>
+            <h3>Ablauf</h3>
+          <p>5 mal mit 5 Würfeln würfeln und jeweils das entsprechende Wort in der Liste nachschauen</p>
+        </section>
+        <section>
+          <h3>Alternative</h3>
+          <p>Wem das zu umständlich ist, kann auch bei Mira Modi ein Paswort bestellen.</p>
+          <p> <small><a href="https://www.dicewarepasswords.com" target="_blank">dicewarepasswords.com</a> , $10 inkl. Versand</small></p>
+          <img style="margin: 0"  src="/assets/MiraModi.png" width="450" />
         </section>
       </div>
+
+      <footer class="pageFooter">
+        <div class="pageFooter__left">
+          <img src="assets/polyas_logo_inverse.svg" />
+        </div>
+        <div class="pageFooter__right">
+          <p>
+            Marko Pohl<br />
+            ARP Nummer 6 a,b
+          </p>
+        </div>
+      </footer>
     </div>
 
     <script src="../dist/reveal.js"></script>
