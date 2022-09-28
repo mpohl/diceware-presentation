@@ -10,16 +10,16 @@
   font-family: "Montserrat";
   font-weight: 500;
   font-style: normal;
-  src: url("assets/fonts/Montserrat/Montserrat-Medium.eot");
-  src: url("assets/fonts/Montserrat/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("assets/fonts/Montserrat/Montserrat-Medium.woff") format("woff");
+  src: url("../../assets/fonts/Montserrat/Montserrat-Medium.eot");
+  src: url("../../assets/fonts/Montserrat/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("../../assets/fonts/Montserrat/Montserrat-Medium.woff") format("woff");
 }
 /** Montserrat SemiBold **/
 @font-face {
   font-family: "Montserrat";
   font-weight: 600;
   font-style: normal;
-  src: url("assets/fonts/Montserrat/Montserrat-SemiBold.eot");
-  src: url("assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff");
+  src: url("../../assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: url("../../assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("../../assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff");
 }
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff;
