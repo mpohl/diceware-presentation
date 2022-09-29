@@ -396,8 +396,21 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   display: inline-block;
   background-color: grey;
   color: white;
-  padding: 1rem;
+  padding: 0.6rem 1rem 1rem;
   margin: 1rem;
+}
+.reveal pre {
+  display: block;
+  position: relative;
+  margin: var(--r-block-margin) auto;
+  text-align: left;
+  font-size: 0.8em;
+  font-family: var(--r-code-font);
+  line-height: 1.4em;
+  word-wrap: break-word;
+}
+.reveal pre code {
+  margin: 0;
 }
 .reveal .fragment.highlight-green.visible {
   color: #12d125 !important;
