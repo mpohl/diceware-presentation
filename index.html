@@ -116,19 +116,33 @@
         <section data-transition="fade">
           <h3>Was ist Entropie?</h3>
           <p>
-            Vereinfacht umschrieben ordnet die Entropie jedem Zeichen eines
+            Entropie beschreibt die „Stärke“ eines Passwortes.
+          </p>
+          <p>
+            Ein Kennwort mit hoher Entropie kann schwieriger zu knacken sein.
+          </p>
+          <p>
+            Vereinfacht gesagt ordnet die Entropie jedem Zeichen eines
             Passworts einen Informationsgehalt (Wert) in Abhängigkeit der
             möglichen Zeichen zu.
           </p>
-          <p>
-            Daraus ergibt sich ein Gesamtwert, welcher die „Stärke“ des
-            Passwortes umschreibt.
-          </p>
-          <p>
-            Dies bedeutet, dass ein Kennwort mit hoher Entropie potenziell aus
-            wesentlich mehr verschiedenen Zeichen bestehen könnte und so auch
-            schwieriger zu knacken ist.
-          </p>
+        </section>
+        <section>
+          <h3>Beispiel</h3>
+          <p><code>01101010</code></p>
+          <small
+          >8 Zeichen, 0 oder 1</small
+          >
+          <table>
+            <tr>
+              <th>Möglichkeiten</th>
+              <td>255</td>
+            </tr>
+            <tr>
+              <th>Entropie</th>
+              <td>8 bit</td>
+            </tr>
+          </table>
         </section>
         <section>
           <h3>Kurzes, komplexes Passwort</h3>
@@ -143,9 +157,12 @@
             </tr>
             <tr>
               <th>Entropie</th>
-              <td>49 bits</td>
+              <td>49 bit</td>
             </tr>
           </table>
+          <p class="fragment fade-in">
+            Sieht sicher aus...
+          </p>
           <div class="fragment fade-in">
             <h4>Bruteforce Hack</h4>
             <p>
@@ -177,7 +194,7 @@
             </tr>
             <tr>
               <th>Entropie</th>
-              <td>~ 150.41 bits</td>
+              <td>~ 150.41 bit</td>
             </tr>
           </table>
           <div class="fragment fade-in">
@@ -202,8 +219,9 @@
         </section>
         <section data-background-color="rgb(0,0,0)"></section>
         <section>
-          <h3>Weitere Vorteile eines langen und nicht komplexen Passwortes</h3>
+          <h3>Vorteile eines langen und nicht komplexen Passwortes</h3>
           <ul>
+            <li class="fragment fade-in">Schwer per Bruteforce zu knacken</li>
             <li class="fragment fade-in">
               Leichter zu merken.
               <ul>
@@ -211,8 +229,14 @@
                 <li>Eselsbrücken gut möglich</li>
               </ul>
               <div
+                      class="fragment fade-in"
+                      style="position: absolute; top: -130px; left: 17%"
+              >
+                Kann sich noch jemand erinnern?
+              </div>
+              <div
                 class="fragment fade-in"
-                style="position: absolute; top: -130px; left: 17%"
+                style="position: absolute; top: -159px; left: 14%"
               >
                 <code>glukose bild puffer sydney hallo</code>
               </div>
@@ -239,14 +263,16 @@
           </p>
           <p class="fragment fade-in">
             eine lange Wortliste ...
-            <span class="fragment fade-in"> 66666 Zeilen...</span>
+            <span class="fragment fade-in"> 7776 Zeilen...</span>
           </p>
         </section>
         <section>
           <h3>Und Zufall!</h3>
           <p class="fragment fade-in">
-            Besser gesagt eine Zufallszahl zwischen 11111 und 66666
+            Besser gesagt eine Zufallszahl zwischen 11111 und 66666<br />
+            <small>ohne Nullen</small>
           </p>
+
           <p class="fragment fade-in">Wie erzeuge ich die?</p>
           <img src="assets/Dice.png" class="fragment fade-in" width="350" />
         </section>
@@ -266,9 +292,8 @@
           <p class="fragment fade-in">Fertig!</p>
           <p class="fragment fade-in">
             <small
-              >Mittlerweile werden 6 Wörter plus ein frei positioniertes Zeichen
-              für empfohlen, um eine noch höhere Sicherheit zu erreichen, wenn
-              Methode und verwendete Liste bekannt sind..</small
+              >Mittlerweile werden für eine sichere Passphrase 6 Wörter oder 5 Wörter plus ein frei positioniertes Zeichen
+              empfohlen.</small
             >
           </p>
           <p class="fragment fade-in">
@@ -294,6 +319,41 @@
             >
           </p>
           <img style="margin: 0" src="assets/MiraModi.png" width="450" />
+        </section>
+
+        <section>
+          <h2>Vielen Dank!</h2>
+          <p>Für Zeit und Aufmerksamkeit.</p>
+          <p></p>
+          Außerdem danke ich:
+          <ul>
+            <li>
+              <a href="https://de.wikipedia.org/wiki/Diceware"
+                >Diceware auf Wikipedia</a
+              >
+            </li>
+            <li>
+              <a href="https://theworld.com/~reinhold/dicewarefaq.html#howlong">Diceware FAQ by Arnold G. Reinhold</a>
+            </li>
+            <li>
+              <a hrtef="https://imgs.xkcd.com/comics/password_strength.png">Randall Munroe, xkcd</a>
+            </li>
+            <li>
+              <a
+                href="https://raw.githubusercontent.com/klamann/diceware-dereko/master/diceware-dereko.txt"
+                >diceware-dereko Wortliste</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://arstechnica.com/information-technology/2014/03/diceware-passwords-now-need-six-random-words-to-thwart-hackers/"
+                >ArsTechnica Artikel zur Anzahl der Wörter</a
+              >
+            </li>
+            <li>
+              <a href="https://dicewarepasswords.com">Miro Modis online shop</a>
+            </li>
+          </ul>
         </section>
       </div>
 
