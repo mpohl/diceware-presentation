@@ -459,7 +459,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal .external-presentation {
   border: 5px dotted #3b6ead;
   position: relative;
-  padding: 4rem 2rem;
+  padding: 2rem;
   background-color: #3b6ead1a;
 }
 .reveal .external-presentation__title {
