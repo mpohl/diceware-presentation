@@ -31,7 +31,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 :root {
   --r-background-color: #fff;
   --r-main-font: Montserrat, sans-serif;
-  --r-main-font-size: 30px;
+  --r-main-font-size: 23px;
   --r-main-color: #4f4f4f;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
@@ -46,9 +46,9 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --r-heading1-size: 3em;
   --r-heading2-size: 2em;
   --r-heading3-size: 1.55em;
-  --r-heading4-size: 1em;
+  --r-heading4-size: 1.3em;
   --r-code-font: monospace;
-  --r-link-color: #00008B;
+  --r-link-color: #00008b;
   --r-link-color-dark: #00003f;
   --r-link-color-hover: #0000f1;
   --r-selection-background-color: rgba(0, 0, 0, 0.99);
@@ -385,7 +385,11 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   font-size: 20px !important;
   padding: 1rem;
 }
-.reveal h3, .reveal h4, .reveal table, .reveal ul, .reveal ol {
+.reveal h3,
+.reveal h4,
+.reveal table,
+.reveal ul,
+.reveal ol {
   margin-top: 2rem;
   margin-bottom: 0rem;
 }
@@ -415,7 +419,8 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal .fragment.highlight-green.visible {
   color: #12d125 !important;
 }
-.reveal .pageFooter, .reveal .pageHeader {
+.reveal .pageFooter,
+.reveal .pageHeader {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -427,13 +432,17 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   background-color: #738f9b;
   color: #fff;
 }
-.reveal .pageFooter img, .reveal .pageFooter p, .reveal .pageHeader img, .reveal .pageHeader p {
+.reveal .pageFooter img,
+.reveal .pageFooter p,
+.reveal .pageHeader img,
+.reveal .pageHeader p {
   margin: 0;
 }
 .reveal .pageFooter .pageFooter__right,
 .reveal .pageFooter .pageFooter__left,
 .reveal .pageFooter .pageHeader__left,
-.reveal .pageFooter .pageHeader__right, .reveal .pageHeader .pageFooter__right,
+.reveal .pageFooter .pageHeader__right,
+.reveal .pageHeader .pageFooter__right,
 .reveal .pageHeader .pageFooter__left,
 .reveal .pageHeader .pageHeader__left,
 .reveal .pageHeader .pageHeader__right {
@@ -446,4 +455,17 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 .reveal .controls {
   color: white;
+}
+.reveal .external-presentation {
+  border: 5px dotted #3b6ead;
+  position: relative;
+  padding: 4rem 2rem;
+  background-color: #3b6ead1a;
+}
+.reveal .external-presentation__title {
+  position: absolute;
+  top: -32px;
+  left: 0;
+  font-size: 17px;
+  color: #3b6ead;
 }

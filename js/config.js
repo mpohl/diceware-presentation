@@ -15,21 +15,21 @@ export default {
   maxScale: 1.2,
 
   // Display presentation control arrows
-  controls: false,
+  controls: true,
 
   // Help the user learn the controls by providing hints, for example by
   // bouncing the down arrow when they first encounter a vertical slide
-  controlsTutorial: true,
+  controlsTutorial: false,
 
   // Determines where controls appear, "edges" or "bottom-right"
   controlsLayout: "bottom-right",
 
   // Visibility rule for backwards navigation arrows; "faded", "hidden"
   // or "visible"
-  controlsBackArrows: "faded",
+  controlsBackArrows: "hidden",
 
   // Display a presentation progress bar
-  progress: true,
+  progress: false,
 
   // Display the page number of the current slide
   // - true:    Show slide number

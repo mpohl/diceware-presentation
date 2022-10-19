@@ -6,50 +6,47 @@
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 
-
 // Default mixins and settings -----------------
 @import "../template/mixins";
 @import "../template/settings";
 // ---------------------------------------------
 
-
-
-
 /** Montserrat Medium **/
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 500;
   font-style: normal;
-  src: url('../../assets/fonts/Montserrat/Montserrat-Medium.eot');
-  src: url('../../assets/fonts/Montserrat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
-  url('../../assets/fonts/Montserrat/Montserrat-Medium.woff2') format('woff2'),
-  url('../../assets/fonts/Montserrat/Montserrat-Medium.woff') format('woff');
+  src: url("../../assets/fonts/Montserrat/Montserrat-Medium.eot");
+  src: url("../../assets/fonts/Montserrat/Montserrat-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../assets/fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"),
+    url("../../assets/fonts/Montserrat/Montserrat-Medium.woff") format("woff");
 }
 
 /** Montserrat SemiBold **/
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 600;
   font-style: normal;
-  src: url('../../assets/fonts/Montserrat/Montserrat-SemiBold.eot');
-  src: url('../../assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
-  url('../../assets/fonts/Montserrat/Montserrat-SemiBold.woff2') format('woff2'),
-  url('../../assets/fonts/Montserrat/Montserrat-SemiBold.woff') format('woff');
+  src: url("../../assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: url("../../assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../assets/fonts/Montserrat/Montserrat-SemiBold.woff2")
+      format("woff2"),
+    url("../../assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff");
 }
 
-
-
 // Override theme settings (see ../template/settings.scss)
-$mainFont: 'Montserrat', sans-serif;
+$mainFont: "Montserrat", sans-serif;
 $mainColor: #4f4f4f;
-$headingFont: 'Montserrat', sans-serif;
-$mainFontSize: 30px;
+$headingFont: "Montserrat", sans-serif;
+$mainFontSize: 23px;
 $headingColor: #4f4f4f;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: #fff;
-$linkColor: #00008B;
-$linkColorHover: lighten( $linkColor, 20% );
+$linkColor: #00008b;
+$linkColorHover: lighten($linkColor, 20%);
 $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 
 // Change text colors against dark slide backgrounds
@@ -76,12 +73,16 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
     }
   }
 
-  h3,h4, table, ul, ol{
+  h3,
+  h4,
+  table,
+  ul,
+  ol {
     margin-top: 2rem;
     margin-bottom: 0rem;
   }
 
-  li>ul{
+  li > ul {
     margin-top: 0;
   }
 
@@ -98,12 +99,12 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
     position: relative;
     margin: var(--r-block-margin) auto;
     text-align: left;
-    font-size: .8em;
+    font-size: 0.8em;
     font-family: var(--r-code-font);
     line-height: 1.4em;
     word-wrap: break-word;
-    code{
-      margin:0
+    code {
+      margin: 0;
     }
   }
 
@@ -111,33 +112,48 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
     color: #12d125 !important;
   }
 
-  .pageFooter,.pageHeader {
+  .pageFooter,
+  .pageHeader {
     position: absolute;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height:auto;
+    height: auto;
     bottom: 0;
     left: 0;
     font-size: 18px;
     background-color: #738f9b;
     color: #fff;
-    img, p{
+    img,
+    p {
       margin: 0;
     }
     .pageFooter__right,
     .pageFooter__left,
     .pageHeader__left,
-    .pageHeader__right{
+    .pageHeader__right {
       padding: 1.5rem;
     }
   }
-  .pageHeader{
+  .pageHeader {
     font-size: 24px;
-    top:0;
-    height:80px;
+    top: 0;
+    height: 80px;
   }
-  .controls{
+  .controls {
     color: white;
+  }
+  .external-presentation {
+    border: 5px dotted #3b6ead;
+    position: relative;
+    padding: 4rem 2rem;
+    background-color: #3b6ead1a;
+    &__title {
+      position: absolute;
+      top: -32px;
+      left: 0;
+      font-size: 17px;
+      color: #3b6ead;
+    }
   }
 }
